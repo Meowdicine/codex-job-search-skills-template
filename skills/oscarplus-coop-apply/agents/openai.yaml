@@ -1,0 +1,4 @@
+version: 1
+display_name: "OSCAR Co-op Controller"
+short_description: "Coordinate portal packages and approvals"
+default_prompt: "Use $oscarplus-coop-apply as the main controller. Read my private career-config.json, rank postings, create packages, route resume work to $ats-resume-tailor and portal work to $external-coop-apply, and stop before final submit."

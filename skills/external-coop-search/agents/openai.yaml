@@ -1,0 +1,4 @@
+version: 1
+display_name: "External Co-op Search"
+short_description: "Find and score public job leads"
+default_prompt: "Use $external-coop-search with my private career-config.json to find current public co-op/intern leads, verify official pages, deduplicate against my queue, score them, and save only useful leads."

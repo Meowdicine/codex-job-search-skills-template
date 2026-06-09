@@ -1,0 +1,4 @@
+version: 1
+display_name: "External Co-op Apply"
+short_description: "Stage employer portal applications"
+default_prompt: "Use $external-coop-apply with my private career-config.json to stage this external application, upload approved documents, handle blockers safely, and stop before final submit."

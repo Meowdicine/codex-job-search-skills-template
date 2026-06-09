@@ -1,0 +1,4 @@
+version: 1
+display_name: "ATS Resume Tailor"
+short_description: "Tailor resumes to job postings"
+default_prompt: "Use $ats-resume-tailor with my private career-config.json to tailor my resume for this job posting and return the gate check, keyword map, truthfulness notes, and resume edits."

@@ -1,0 +1,59 @@
+{
+  "candidate": {
+    "displayName": "YOUR_NAME",
+    "uploadFileStem": "YOUR_NAME_Resume",
+    "preferredLanguage": "Simplified Chinese",
+    "workEmail": "candidate@example.com",
+    "phone": "OPTIONAL_PRIVATE",
+    "location": "City, Province/State, Country",
+    "linkedin": "https://www.linkedin.com/in/YOUR_HANDLE",
+    "github": "https://github.com/YOUR_HANDLE",
+    "portfolio": ""
+  },
+  "school": {
+    "name": "YOUR_UNIVERSITY",
+    "program": "YOUR_PROGRAM",
+    "degree": "YOUR_DEGREE",
+    "coOpPortalName": "OSCARplus or YOUR_PORTAL_NAME",
+    "coOpTerm": "Fall 2026",
+    "coOpRuleSummary": "Paid, full-time, degree-related, approved duration, employer can provide offer/contract details."
+  },
+  "paths": {
+    "careerRoot": "%USERPROFILE%\\Career-System",
+    "jobQueue": "%USERPROFILE%\\Career-System\\dashboard-data\\job-hunting.json",
+    "resumeSystem": "%USERPROFILE%\\Career-System\\Resume-Coop-System.md",
+    "resumeSummary": "%USERPROFILE%\\Career-System\\Resume-Summary.md",
+    "resumeMaterialBank": "%USERPROFILE%\\Career-System\\Resume-Material-Bank.md",
+    "resumeVariantsDir": "%USERPROFILE%\\Career-System\\Resume-Variants",
+    "applicationsRoot": "%USERPROFILE%\\Career-System\\Applications",
+    "oscarApplicationsDir": "%USERPROFILE%\\Career-System\\Applications\\OSCARplus",
+    "externalApplicationsDir": "%USERPROFILE%\\Career-System\\Applications\\External",
+    "jobLeadsDir": "%USERPROFILE%\\Career-System\\Job-Leads",
+    "applicationFormDefaults": "%USERPROFILE%\\Career-System\\Application-Form-Defaults.md",
+    "externalApplicationProfile": "%USERPROFILE%\\Career-System\\External-Application-Profile.md"
+  },
+  "resumeLanes": [
+    {
+      "id": "software-data",
+      "useFor": "software engineering, data engineering, backend, cloud, DevOps, QA automation, dashboards, analytics, AI tooling",
+      "baselineSource": "PRIVATE_PATH_TO_BASELINE_RESUME_SOURCE"
+    },
+    {
+      "id": "industrial-automation-ot",
+      "useFor": "industrial automation, controls-adjacent software, manufacturing systems, utility technology, network/hardware test automation",
+      "baselineSource": "PRIVATE_PATH_TO_BASELINE_RESUME_SOURCE"
+    },
+    {
+      "id": "domain-specialist",
+      "useFor": "candidate-specific domain roles such as energy, healthcare, finance, research, or infrastructure",
+      "baselineSource": "PRIVATE_PATH_TO_BASELINE_RESUME_SOURCE"
+    }
+  ],
+  "applicationSafety": {
+    "allowCodexToCreateExternalJobAccounts": false,
+    "allowCodexToUseWorkEmailVerification": false,
+    "finalSubmitRequiresCurrentThreadApproval": true,
+    "protectedClassAnswersRequireExplicitStoredDefaults": true,
+    "neverLogSecrets": true
+  }
+}

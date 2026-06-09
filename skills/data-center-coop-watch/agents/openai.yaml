@@ -1,0 +1,4 @@
+version: 1
+display_name: "Data Center Co-op Watch"
+short_description: "Find infrastructure and data center leads"
+default_prompt: "Use $data-center-coop-watch with my private career-config.json to find current data center, cloud infrastructure, network operations, and facility-adjacent student leads, score them, and save useful leads."

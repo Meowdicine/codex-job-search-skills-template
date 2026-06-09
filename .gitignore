@@ -1,0 +1,44 @@
+# Private career data
+career-config.json
+**/Application-Form-Defaults.md
+**/External-Application-Profile.md
+**/Resume-Summary.md
+**/Resume-Material-Bank.md
+**/Resume-2026-General.md
+**/Resume-Variants/**
+**/Applications/**
+**/Job-Leads/**
+**/dashboard-data/job-hunting.json
+
+# Generated application artifacts
+**/submission/**
+**/layout-qa/**
+**/chrome-evidence/**
+**/*.pdf
+**/*.docx
+**/*.tex
+**/*.log
+**/*.aux
+**/*.out
+**/*.synctex.gz
+
+# Secrets and local state
+.env
+.env.*
+*.secret.*
+*.token.*
+.codex/
+**/.codex/**
+**/auth.json
+**/config.toml
+credentials/**
+vault/**
+cookies/**
+sessions/**
+screenshots/**
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

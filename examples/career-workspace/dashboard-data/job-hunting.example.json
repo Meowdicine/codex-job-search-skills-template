@@ -1,0 +1,18 @@
+{
+  "pipeline": [
+    {
+      "id": "public-example-company-software-intern-toronto-20260601",
+      "company": "Example Company",
+      "role": "Software Developer Intern",
+      "date": "2026-06-01",
+      "status": "fit-check",
+      "source": "public-company-page",
+      "sourceUrl": "https://example.com/careers/example-role",
+      "fitScore": 4.1,
+      "resumeVersion": "software-data",
+      "hardGates": [],
+      "feedback": "Fake example row. Replace in a private queue.",
+      "next": "Use $ats-resume-tailor, then $external-coop-apply if package passes."
+    }
+  ]
+}
