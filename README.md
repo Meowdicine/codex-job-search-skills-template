@@ -14,6 +14,7 @@ This repository is a template. It intentionally contains no real candidate name,
 - `config/career-config.example.json`: private configuration schema. Copy it outside the public repo before filling it in.
 - `docs/USAGE.md`: setup and daily workflow.
 - `docs/OSCAR_MULTI_THREAD_PLAYBOOK.md`: how to run one main controller thread plus worker Codex threads.
+- `docs/OSCAR_CONTROLLER_PROMPTS.md`: copy-paste prompts for the OSCAR controller and worker threads.
 - `docs/GITHUB_SHARING.md`: how to publish or share the template safely.
 - `docs/PUBLICATION_CHECKLIST.md`: privacy checklist before publishing or sharing.
 

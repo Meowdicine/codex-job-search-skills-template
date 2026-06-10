@@ -69,6 +69,17 @@ Read `references/resume-source-map.md` when selecting a lane or checking claim b
 - If the final resume depends on Overleaf or another web editor, use an authorized browser/plugin workflow and stop if the user is not logged in or the browser cannot safely export.
 - Do not use foreground desktop automation, native file-picker automation, or cursor movement for resume export unless the user explicitly requests that fallback in the current thread.
 
+## Layout QA And Baseline Protection
+
+- Preserve the selected baseline's role inventory by default. Prefer compact wording, bullet reordering, skills prioritization, or spacing fixes before deleting an entire experience or project.
+- Do not use a previously employer-tailored package as the content baseline for a different employer. Old packages may inform layout fixes only; their employer-specific tools, keywords, metrics, and bullets must be independently supported.
+- Treat one-off tools and terms from prior variants as contaminated until confirmed by the candidate's base resume sources or the user.
+- Keep the resume visually full. A sparse final third, large blank lower half, clipped text, broken bullets, or overflow fails QA even when the PDF is one page.
+- For dense one-page resumes, line economy matters: avoid bullets that wrap to an orphan final line with only a few words. Fix with truthful wording changes or spacing, not unsupported claims.
+- Keep skills compact and scannable. Three dense category lines are usually better than a long keyword dump.
+- Prefer ordinary, recruiter-readable project names and outcomes. Put niche acronyms, patent details, model names, or benchmark names in bullets only when they are supported and useful for the target role.
+- Exclude extracurriculars, protected-class identity details, and unrelated personal context unless the user asks or the posting makes them concretely relevant.
+
 ## Writing Rules
 
 - Use the JD's exact wording for ATS-critical nouns and phrases when the claim is true.
@@ -86,6 +97,6 @@ For a specific job, return or write these package artifacts:
 - `keyword-map.md`: exact JD terms and where they appear in the resume.
 - `resume-change-summary.md`: baseline file, optimization level, changed title/summary/skills/bullets, unchanged sections, and unsupported JD terms not forced.
 - `truthfulness-notes.md`: unsupported or risky claims removed, softened, or needing confirmation.
-- `submit-checklist.md`: title match, hard skills, copied JD phrases, selectable PDF, one-page/layout status, file name, and final blockers.
+- `submit-checklist.md`: title match, hard skills, copied JD phrases, selectable PDF, one-page status, visual-fill status, layout/export status, short upload-facing filename, and final blockers.
 
 Use the user's preferred language from config for explanations. Preserve exact JD phrases, resume lines, job titles, company names, technologies, filenames, and local paths in their original language.

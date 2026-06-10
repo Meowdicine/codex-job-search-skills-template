@@ -2,6 +2,10 @@
 
 目标：一个主控 thread 负责排序、分配、合并状态；多个 worker thread 分别做 JD 提取、简历定制、外部 portal staging、搜索补充。这样可以并行，但不会让多个 Codex 同时乱改同一个申请。
 
+可直接复制的完整 prompt 版本见：
+
+- `docs/OSCAR_CONTROLLER_PROMPTS.md`
+
 ## 线程角色
 
 | Thread | 负责什么 | 不负责什么 |

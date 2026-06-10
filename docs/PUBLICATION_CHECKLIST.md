@@ -20,6 +20,14 @@ Run this before making the repo public.
 - Scripts that do not contain secrets and default to user-provided paths.
 - Example JSON with fake companies and fake IDs.
 
+## When Syncing From Private Skills
+
+- Do not copy private `SKILL.md` files directly into the public repo.
+- Translate real names, schools, emails, local paths, resume file names, portal defaults, and account workflows into placeholders.
+- Convert standing personal authorization into explicit user-configurable flags.
+- Replace local package paths with `career-config.json` keys.
+- Keep workflow lessons, safety boundaries, prompt templates, statuses, and helper scripts only after a scan.
+
 ## Suggested Scan
 
 From the repository root:

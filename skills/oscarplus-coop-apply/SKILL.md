@@ -93,6 +93,26 @@ Secrets logged: no
 6. The controller owns batch priority, final decisions, and final-submit approval cadence.
 7. If two workers touch the same file, stop and reconcile before continuing.
 
+Maintain a controller ledger in the batch notes or controller thread summary:
+
+```text
+Job id | Company | Role | Package path | Owner thread | Status | Blocker | Next action | Last verified
+```
+
+Use the ledger to avoid duplicate work. A worker may prepare a package, but only the controller moves a job into upload/final-approval priority.
+
+## Approval Cadence
+
+Every application needs final approval. Higher priority jobs should get more checkpoints:
+
+| Priority | Checkpoints |
+|---|---|
+| High | approve target selection; approve fit/gate verdict; approve tailored package after layout QA; approve upload staging; approve final submit |
+| Medium | approve fit/gate verdict; approve final package; approve final submit |
+| Low | batch-prepare allowed; approve any upload; approve final submit |
+
+Do not compress or skip the final-submit approval. The final approval question must name the portal, company, role, posting ID when available, and visible final button label.
+
 ## Workflow
 
 1. Build the candidate batch.
@@ -123,8 +143,10 @@ Secrets logged: no
 6. Stage upload only after package approval.
    - Upload only approved files.
    - If final submission happens on an external employer portal, route to `$external-coop-apply`.
-   - For manual upload handoff, give the exact upload control/page, approved file path, and next user action.
-   - After manual upload, verify visible uploaded filename before continuing.
+   - For manual upload handoff, give the exact upload control/page, approved absolute file path, a visible tab cue when duplicate tabs exist, and the next user action.
+   - Do not overwrite the clipboard with a URL after copying an upload file path unless the user asks; keep the clipboard useful for the native file picker.
+   - Manual upload handoff covers only the file-picker step. After the user says the file is uploaded, reclaim or inspect the same page, verify the visible uploaded filename/state, then continue to the next/review page.
+   - If browser control cannot verify the uploaded state after a user handoff, mark `upload-staged` plus `verification-needed` instead of claiming the upload is complete.
    - Stop on the review/submit page and ask for final approval.
 
 7. Final submission.
@@ -171,6 +193,8 @@ Each package should contain:
 - `submitted`
 - `manual-review`
 - `skip`
+- `verification-needed`
+- `chrome-plugin-blocked`
 
 ## User-Facing Response Contract
 
